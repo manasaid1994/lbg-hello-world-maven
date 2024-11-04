@@ -7,13 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/manasaid1994/lbg-hello-world-maven.git'
-            }
-            
-        }
         stage('Compile') {
             steps {
 
